@@ -1,0 +1,21 @@
+<div>
+  <button mat-raised-button (click)="getTypeData(type.id)" *ngFor="let type of typeVector">{{type.name}}</button>
+
+  <h1>O que levar:</h1>
+  <p>{{advantageRecommendation}}</p>
+  <h1>O que não levar:</h1>
+  <p>{{disadvantageRecommendation}}</p>
+  <br>
+  <br>
+  <h1>O que levar</h1>
+  <h2>{{typeName}} tem fraqueza contra:</h2>
+  <p>{{doubleDamageFrom}}</p>
+  <h2>São resistêntes contra {{typeName}}:</h2>
+  <p>{{halfDamageTo}}</p>
+  <h1>O que não levar</h1>
+  <h2>{{typeName}} tem resistencia contra:</h2>
+  <p>{{halfDamageFrom}}</p>
+  <h2>São fracos contra {{typeName}}:</h2>
+  <p>{{doubleDamageTo}}</p>
+
+</div>
